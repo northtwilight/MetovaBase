@@ -1,7 +1,6 @@
 disabled_rules: # rule identifiers to exclude from running
-  - todo
+  - todo # This rule is handled by another build phase.
   - line_length
-  - valid_docs
   - trailing_whitespace
   - statement_position
   - opening_brace
@@ -21,6 +20,7 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
 force_cast: error
 force_try: error
 force_unwrapping: error
+valid_docs: error
 variable_name:
   max_length:
     warning: 55
